@@ -1,0 +1,242 @@
+:root{
+    --White: hsl(0, 0%, 100%);
+    --Stone100: hsl(30, 54%, 90%);
+    --Stone150: hsl(30, 18%, 87%);
+    --Stone600: hsl(30, 10%, 34%);
+    --Stone900: hsl(24, 5%, 18%);
+
+    --Brown800: hsl(14, 45%, 36%);
+
+    --Rose800: hsl(332, 51%, 32%);
+    --Rose50: hsl(330, 100%, 98%);
+}
+@font-face {
+    font-family: Outfit;
+    src: url(./assets/fonts/outfit/Outfit-VariableFont_wght.ttf);
+}
+@font-face {
+    font-family: YoungSerif;
+    src: url(./assets/fonts/young-serif/YoungSerif-Regular.ttf);
+}
+html{
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+}
+body{
+    display: flex;
+    height: 900px;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--Stone100);
+    font-family: Outfit;
+    
+}
+.container{
+
+    position: relative;
+    width:380px;
+    height: 100%;
+    border-radius: 10px;
+    background-color: var(--White);
+
+}
+.image{
+    display: flex;
+    position: relative;
+    top: 20px;
+    justify-content: center;
+}
+img{
+    width:340px;
+    height: 135px;
+    border-radius: 10px;
+    
+}
+.text{
+   
+    padding: 36px  0px 0px 18px;
+}
+.title{
+    
+    font-family:YoungSerif;
+    font-size: 21px;
+    font-weight: 400;
+    color: var(--Stone600);
+}
+.discrition{
+    font-size: 9px;
+    color: var(--Stone600);
+    
+}
+.preparation{
+    display: flex;
+    position: relative;
+    height: 100px;
+    top: 8px;
+    flex-direction:column;
+    width: 95%;
+    border-radius: 10px;
+    background-color: var(--Rose50);
+    
+}
+.preparation .title{
+    color: var(--Rose800);
+    font-size: 12px;
+    font-family:Outfit;
+    font-weight: 600;
+    padding: 16px;
+}
+.preparation ul{
+    position: relative;
+    top: -30px;
+    right: 5px;
+}
+.preparation li{  
+    font-size: 9px;
+    font-family:Outfit;
+    padding: 8px  0px 0px 0px;
+
+}
+.ingredients{
+    position: relative;
+    top: 10px;
+    right: 15px;
+}
+.ingredients .title{
+    position: relative;
+    top: 10px;
+    font-size: 14px;
+    font-family:YoungSerif;
+    color: var(--Brown800);
+    font-weight: 400;
+    padding: 16px;
+
+}
+.ingredients li{  
+    font-size: 9px;
+    font-family:Outfit;
+    padding: 10px  0px 0px 0px;
+
+}
+.intructions{
+    position: relative;
+    right: 15px;
+    top: 16px;
+}
+.intructions .title{
+    position: relative;
+    top: 10px;
+    font-size: 14px;
+    font-family:YoungSerif;
+    color: var(--Brown800);
+    font-weight: 400;
+    padding: 16px;
+}
+.intructions ol{
+    position: relative;
+    right: 10px;
+    
+}
+.intructions li{
+    font-size: 9px;
+    font-family:Outfit;
+    
+    padding: 8px  0px 0px 0px;
+}
+li::marker{
+    color:var(--Brown800);
+    font-weight: 800;
+}
+.intructions li span{
+    position: relative; 
+    right: -9px;
+}
+.hr1{
+    position: relative;
+    top: 22px;
+    margin-top: -10px;
+}
+.hr{
+    position: relative;
+    top: 8px;
+    margin-top: -10px;
+}
+.nutrition{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    
+    right: 17px;
+    font-size: 9px;
+    font-family:Outfit;
+    
+}
+.nutrition .title{
+    position: relative;
+    top: 10px;
+    font-size: 14px;
+    font-family:YoungSerif;
+    color: var(--Brown800);
+    font-weight: 400;
+    padding: 16px;
+
+}
+.nutrition .discrition{
+    position: relative;
+    left: 15px;
+    top:5px;
+}
+.nutrition .calories{
+    display: flex;
+    position: relative;
+    top: 20px;
+    left: 35px;
+    justify-content: space-between;
+
+}
+.nutrition .protein{
+    display: flex;
+    position: relative;
+    top: 20px;
+    left: 35px;
+    justify-content: space-between;
+}
+.nutrition .carbs{
+    display: flex;
+    position: relative;
+    top: 20px;
+    left: 35px;
+    justify-content: space-between;
+
+}
+.nutrition .fat{
+    display: flex;
+    position: relative;
+    top: 20px;
+    left: 35px;
+    justify-content: space-between;
+
+}
+.values{
+    text-align: right;
+    color: var(--Brown800);
+    font-weight: 800;
+    position: relative;
+    right: 170px;
+}
+hr{
+    position: relative;
+    top: 20px;
+    width: 340px;
+    opacity: 50%;
+}
+.attribution { 
+    display: flex;
+    position: relative;
+    left: 500px;
+    font-size: 11px; text-align: center; 
+}
+    .attribution a { 
+        color: hsl(228, 45%, 44%);
+    }
